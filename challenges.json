@@ -1,0 +1,84 @@
+{
+  "Day 1": {
+    "Challenge 1": {
+      "question": "<You come across a group of people enjoying a meal that includes meat, dairy, and eggs.\nHow do you approach them?>",
+      "options": {
+        "a": "Politely ask if they have considered the impact of their food choices on animals and the environment.",
+        "b": "Avoid them and continue on your journey.",
+        "c": "Confront them aggressively and try to force them to go vegan."
+      },
+      "feedback": {
+        "a": "Your empathetic approach resonates with some of the people, and they show interest in learning more about veganism.",
+        "b": "By avoiding them, you missed an opportunity to educate and influence others positively.",
+        "c": "Your aggressive behavior alienates the group, and they remain resistant to change."
+      }
+    },
+    "Challenge 2": {
+      "question": "<You encounter a restaurant that serves plant-based meals,\nbut also offers non-vegan options. What do you do?>",
+      "options": {
+        "a": "Choose a plant-based meal and appreciate the restaurant's efforts to offer vegan options.",
+        "b": "Refuse to enter the restaurant to avoid supporting non-vegan businesses.",
+        "c": "Criticize the restaurant for not being fully vegan and discourage others from going there."
+      },
+      "feedback": {
+        "a": "Your positive attitude encourages the restaurant to consider expanding its vegan menu.",
+        "b": "By avoiding the restaurant, you missed an opportunity to support and promote vegan options.",
+        "c": "Your criticism discourages the restaurant from making positive changes."
+      }
+    },
+    "Challenge 3": {
+      "question": "<You attend a social gathering, and someone offers you a non-vegan dish.\nWhat do you do?>",
+      "options": {
+        "a": "Politely decline the non-vegan dish and explain that you follow a vegan lifestyle.",
+        "b": "Accept the non-vegan dish to avoid any awkwardness or conflict.",
+        "c": "Confront the person offering the dish and express your disagreement with their choice."
+      },
+      "feedback": {
+        "a": "Your polite response educates others about your vegan lifestyle in a respectful manner.",
+        "b": "By accepting the non-vegan dish, you compromised your vegan principles.",
+        "c": "Your confrontational approach creates tension, and the person may not understand your viewpoint."
+      }
+    }
+  },
+  "Day 2": {
+    "Challenge 1": {
+      "question": "<You stumble upon a street food festival with various food stalls.\nWhich food stall do you choose to try?>",
+      "options": {
+        "a": "Plant-based burgers and fries.",
+        "b": "Non-vegan sushi.",
+        "c": "Vegan-friendly ice cream."
+      },
+      "feedback": {
+        "a": "You enjoy a delicious plant-based burger and fries.",
+        "b": "You decide to try non-vegan sushi, but it leaves you feeling guilty.",
+        "c": "You savor a refreshing vegan-friendly ice cream."
+      }
+    },
+    "Challenge 2": {
+      "question": "<You encounter a cooking show on TV featuring a popular chef.\nWhat type of cuisine is the chef promoting?>",
+      "options": {
+        "a": "Vegan Mediterranean cuisine.",
+        "b": "Meat-heavy barbecue dishes.",
+        "c": "Fast food with various meat options."
+      },
+      "feedback": {
+        "a": "You appreciate the promotion of vegan Mediterranean cuisine.",
+        "b": "You feel disappointed with the focus on meat-heavy barbecue dishes.",
+        "c": "You express concern about the environmental impact of fast food with meat options."
+      }
+    },
+    "Challenge 3": {
+      "question": "<You visit a friend's house for dinner, and they serve a non-vegan meal.\nHow do you handle the situation?>",
+      "options": {
+        "a": "Politely explain that you follow a vegan lifestyle and offer to bring a vegan dish next time.",
+        "b": "Eat the non-vegan meal to avoid causing any inconvenience or offense.",
+        "c": "Refuse to eat the meal and express your disapproval of their non-vegan choices."
+      },
+      "feedback": {
+        "a": "Your polite explanation educates your friend about your vegan lifestyle and encourages understanding.",
+        "b": "By eating the non-vegan meal, you compromised your vegan principles.",
+        "c": "Your refusal to eat the meal might lead to tension in your friendship and misunderstandings."
+      }
+    }
+  }
+}

@@ -1,0 +1,50 @@
+# Compiled Java class files
+*.class
+
+# Log files
+*.log
+
+# Eclipse IDE files
+.metadata/
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+
+# IntelliJ IDEA files
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# NetBeans IDE files
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+nbactions.xml
+
+# Maven build directory
+target/
+
+# Gradle build directory
+build/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# External dependencies
+/lib/
+/libs/
+
+# Compiled bytecode
+/classes/
+
