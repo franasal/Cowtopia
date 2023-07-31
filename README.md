@@ -30,15 +30,19 @@ To play Cowtopia, you need Java installed on your machine. Simply follow the ins
 
 To extend the game and add more days and challenges, follow these steps:
 
-1. Create a new JSON file with the challenges for the day (e.g., `dayX_challenges.json`).
-2. Define the challenges in the JSON file using the provided structure (see the example JSON files in the repository).
-3. Update the `DayChallenges.java` file to read and process challenges from the new JSON file.
-
+1. Create a new, or modify the existent, `challenges.json` file with the challenges for the day.
+2. Define the challenges in the JSON file using the structure defined in `challenges.json`.
+3. Update the `Main.java` file to read and process challenges from the new JSON file. 
+- Add a new call of the method `DayChallenges.start` per day:
+```java
+//            Day 3 - The adventure continues...
+            DayChallenges.start(3, player, scanner); // To load challenges for Day 3
+```
 ## Credits
 
-This game was developed as part of the course ["Java Grundkurs"](https://www.cimdata.de/weiterbildung/java-grundkurs/) of Cimdata.
-Inspired by text-based adventure games. The ASCII art for the mentor "Nandi" is sourced from <source>.
-This game was developed using ChatGPT.
+This game was developed as part of the course ["Java Grundkurs"](https://www.cimdata.de/weiterbildung/java-grundkurs/) of Cimdata with the mentoring of Lars Petersen.
+Inspired by text-based adventure games. The ASCII art for the mentor "Nandi" is sourced from the package [`cowsay`](https://en.wikipedia.org/wiki/Cowsay).
+This game was developed with ChatGPT.
 
 ## Contributions
 
