@@ -7,8 +7,6 @@ public class DayChallenges {
         JsonObject jsonChallenges = Utils.readChallengesFromJsonFile(filename);
         String dayKey = "Day " + dayNumber;
         JsonObject jsonDayChallenges = jsonChallenges.getAsJsonObject(dayKey);
-        
-        System.out.println(player.calculateProjectedPopulation(3,5));
 
         if (jsonDayChallenges != null) {
             for (int i = 1; i <= 3; i++) { // Assuming you have 3 challenges for each day
