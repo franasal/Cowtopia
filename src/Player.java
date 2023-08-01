@@ -12,16 +12,17 @@ public class Player {
     private int animalLivesSaved;
 
     public static final long WORLD_POPULATION = 9000000000L; // Assuming a fixed world population
-    private int newVegansPerDay;
+    private long newVegansPerDay;
     private int totalVegans; // Keep track of the total number of vegans
 
+    private int gameLengthInDays; 
   
     
     public Player(String name) {
         this.name = name;
-        this.compassion = 50;
-        this.charisma = 50;
-        this.optimism = 50;
+        this.compassion = 33;
+        this.charisma = 33;
+        this.optimism = 33;
         
         this.totalVegans = (int) Math.round(0.01 * WORLD_POPULATION); // Initialize the total vegans to 0 at the start of the game
 
@@ -124,30 +125,33 @@ public class Player {
         this.animalLivesSaved = animalLivesSaved;
     }
     
-    public int getNewVegansPerDay() {
+    public long getNewVegansPerDay() {
         return newVegansPerDay;
     }
 
-    // Method to calculate the number of new vegans each day
-    public int calculateNewVegans() {
-        // Calculate the number of new vegans based on player's traits and choices
-        // For simplicity, let's assume a linear relationship with the player's optimism and charisma
-        int baseNewVegans = (int) (optimism + charisma) / 10; // This value can be adjusted based on your game balance
-        int exponentialFactor = 2; // Increase this value to make the growth more exponential
-        return (int) Math.pow(baseNewVegans, exponentialFactor);
-    }
+    // Method to calculate the projected population exponentially for a given day
+    public long calculateProjectedPopulation(int currentDay, int totalDays) {
+        double N1 = 0; // Initial population on day 1
+        double ND = WORLD_POPULATION; // Population on day D (9 billion)
 
-    // Method to update the world population based on the number of new vegans each day
-    public void updateWorldPopulation() {
-        int newVegans = calculateNewVegans();
-        newVegansPerDay = newVegans;
-        totalVegans += newVegans; // Accumulate the new vegans each day
+        // Calculate the estimated population on day d using linear interpolation formula
+        double N = N1 + ((ND - N1) * (currentDay - 1) / (totalDays - 1));
+        
+        int baseNewVegans = (int) (optimism + charisma + compassion) ; // This value can be adjusted based on your game balance
+        newVegansPerDay = (long) N* (1 + baseNewVegans/ 100);
+        return newVegansPerDay;
     }
-
+    
     // Method to calculate the percentage of the world population that has turned vegan
-    public double calculateVeganPercentage() {
-        return (double) totalVegans / WORLD_POPULATION * 100;
+    public double calculateVeganPercentage(int totalDays) {
+        return (double) newVegansPerDay / (WORLD_POPULATION * totalDays) * 100;
     }
+    
+    // Setter method for gameLengthInDays
+    public void setGameLengthInDays(int gameLengthInDays) {
+        this.gameLengthInDays = gameLengthInDays;
+    }
+    
     // Getter method for totalVegans
     public int getTotalVegans() {
         return totalVegans;

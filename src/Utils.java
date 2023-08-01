@@ -93,11 +93,9 @@ public static void printFile(String messageIn, String pathIn) {
 }
 
 // Method to display the vegan graph
-public static void displayVeganGraph(int day, int newVegans, int totalVegans, double veganPercentage, long worldPopulation) {
-    System.out.println("\n--- Vegan Growth Graph ---");
-    System.out.println("Day " + day + ": " + newVegans + " new vegans");
-    System.out.println("Total vegans: " + totalVegans);
-    System.out.println("Vegan Percentage: " + String.format("%.2f", veganPercentage) + "%");
+public static void displayVeganGraph(int day, long newVegans, double veganPercentage, long worldPopulation) {
+    System.out.println("\n--- Vegan Growth Graph ---\n");
+    System.out.println("Day " + day + " Total: " + newVegans + " new vegans");
 
     // Calculate the number of bars for the vegan percentage graph
     int bars = (int) Math.round(veganPercentage / 2.0); // Scale the vegan percentage to fit within 50 bars
@@ -113,7 +111,7 @@ public static void displayVeganGraph(int day, int newVegans, int totalVegans, do
     }
     System.out.println("]");
 
-    System.out.println("World Population: " + worldPopulation);
+    System.out.println(String.format("%.2f", veganPercentage)+ " of the 9B world Population\nhas now become aware!");
 }
 
 public static String veganImpactstr(Player player, int vgnbdays) {
@@ -220,6 +218,7 @@ static void processChallenge(JsonObject challenge, Player player, Scanner scanne
         System.out.println(feedback.get("a").getAsString());
         player.increaseCompassion();
         player.increaseCharisma();
+        player.increaseOptimism();
     } else if (choice.equals("b")) {
         Utils.sleep(500); // Short pause
         System.out.println(feedback.get("b").getAsString());

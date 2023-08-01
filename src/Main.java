@@ -42,12 +42,16 @@ public class Main {
             Utils.animateText("...Press enter to continue.\n 4\\4", 20);
             Utils.waitForEnter(); // Wait for the user to press Enter before moving to the next question
       
-//            Day 1 - Getting Started
-            DayChallenges.start(1, player, scanner); // To start challenges for Day 1
-      
-            // Day 2 - Discovering Vegan Alternatives
-            DayChallenges.start(2, player, scanner); // To start challenges for Day 2
-            // Day2.start(player, scanner);
+            
+            // Set the number of days for the game
+            int gameLength = 2; // Change this to the total number of days in the game
+            
+            player.setGameLengthInDays(gameLength);
+            
+            // Loop through each day and start the challenges
+            for (int day = 1; day <= gameLength; day++) {
+                DayChallenges.start(day,gameLength, player, scanner);
+            }
 
             // Add other days here...
 

@@ -2,11 +2,13 @@ import java.util.Scanner;
 import com.google.gson.JsonObject;
 
 public class DayChallenges {
-    public static void start(int dayNumber, Player player, Scanner scanner) {
+    public static void start(int dayNumber, int totalDays, Player player, Scanner scanner) {
         String filename = "challenges.json";
         JsonObject jsonChallenges = Utils.readChallengesFromJsonFile(filename);
         String dayKey = "Day " + dayNumber;
         JsonObject jsonDayChallenges = jsonChallenges.getAsJsonObject(dayKey);
+        
+        System.out.println(player.calculateProjectedPopulation(3,5));
 
         if (jsonDayChallenges != null) {
             for (int i = 1; i <= 3; i++) { // Assuming you have 3 challenges for each day
@@ -25,9 +27,9 @@ public class DayChallenges {
         System.out.println(Utils.veganImpactstr(player, veganDays));
 
         // Calculate and display the number of new vegans and update the world population
-        player.updateWorldPopulation();
-        Utils.displayVeganGraph(veganDays, player.getNewVegansPerDay(), player.getTotalVegans(),
-                player.calculateVeganPercentage(), Player.WORLD_POPULATION);
+ 
+        Utils.displayVeganGraph(veganDays, player.getNewVegansPerDay(),
+                player.calculateVeganPercentage(dayNumber), Player.WORLD_POPULATION);
 
         Utils.sleep(1000); // Short pause before moving to the next day
     }
