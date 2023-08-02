@@ -33,10 +33,11 @@ To extend the game and add more days and challenges, follow these steps:
 1. Create a new, or modify the existent, `challenges.json` file with the challenges for the day.
 2. Define the challenges in the JSON file using the structure defined in `challenges.json`.
 3. Update the `Main.java` file to read and process challenges from the new JSON file. 
-- Add a new call of the method `DayChallenges.start` per day:
+- Set the number of days to be parsed available in the `challenges.json`. That would be the length of the game:
 ```java
-//            Day 3 - The adventure continues...
-            DayChallenges.start(3, player, scanner); // To load challenges for Day 3
+            // Set the number of days for the game
+            int gameLength = 2; // Change this to the total number of days in the game
+
 ```
 ## Credits
 
