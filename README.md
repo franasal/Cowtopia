@@ -1,5 +1,5 @@
 # Cowtopia - A Text-based Vegan Adventure Game
-
+```
                                   .-'.--':'-.     
     ____                        .''::: .:    '.    _____                   _          
    / ___|   ___   __      __   /   :::::'      \  |_   _|   ___    _ __   (_)   __ _   
@@ -12,7 +12,7 @@
 
                    Become a Vegan activist and save the world
                    
-
+```
 Welcome to Cowtopia, a text-based adventure game where you embark on a journey to explore the world of veganism and make impactful choices to save the planet and its animals. In this game, you will play as a VeganHero/ine and navigate through various challenges and scenarios to spread awareness and promote a cruelty-free lifestyle.
 
 ## Getting Started
