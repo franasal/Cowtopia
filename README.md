@@ -1,5 +1,18 @@
 # Cowtopia - A Text-based Vegan Adventure Game
 
+                                  .-'.--':'-.     
+    ____                        .''::: .:    '.    _____                   _          
+   / ___|   ___   __      __   /   :::::'      \  |_   _|   ___    _ __   (_)   __ _   
+  | |      / _ \  \ \ /\ / /  ;.    ':' `       ;   | |    / _ \  | '_ \  | |  / _` |   
+  | |___  | (_) |  \ V  V /   |       '..       |   | |   | (_) | | |_) | | | | (_| | 
+   \____|  \___/    \_/\_/    ; '      ::::.    ;   |_|    \___/  | .__/  |_|  \__,_| 
+                               \       '::::   /                  |_|                  
+                                '.      :::  .'    
+                                  '-.___'_.-'            
+
+                   Become a Vegan activist and save the world
+                   
+
 Welcome to Cowtopia, a text-based adventure game where you embark on a journey to explore the world of veganism and make impactful choices to save the planet and its animals. In this game, you will play as a VeganHero/ine and navigate through various challenges and scenarios to spread awareness and promote a cruelty-free lifestyle.
 
 ## Getting Started
@@ -32,8 +45,7 @@ To extend the game and add more days and challenges, follow these steps:
 
 1. Create a new, or modify the existent, `challenges.json` file with the challenges for the day.
 2. Define the challenges in the JSON file using the structure defined in `challenges.json`.
-3. Update the `Main.java` file to read and process challenges from the new JSON file. 
-- Set the number of days to be parsed available in the `challenges.json`. That would be the length of the game:
+3. Set the number of days to be parsed available in the `challenges.json`. That would be the length of the game:
 ```java
             // Set the number of days for the game
             int gameLength = 2; // Change this to the total number of days in the game
